@@ -53,22 +53,39 @@
 //     console.log(`koalas are the winners of the competition`);
 // }
 
-const dolphinAverageScore = (97+112+101)/3;
-const koalasAverageScore = (109+95+123)/3;
-console.log(dolphinAverageScore,koalasAverageScore);
+// const dolphinAverageScore = (97+112+101)/3;
+// const koalasAverageScore = (109+95+123)/3;
+// console.log(dolphinAverageScore,koalasAverageScore);
 
-if (dolphinAverageScore > koalasAverageScore && dolphinAverageScore >= 100){
-    console.log( `Dolphins are the winners of the competition`)
-}else if(koalasAverageScore > dolphinAverageScore && koalasAverageScore >= 100){
-    console.log( `Koalas are the winners of the competition`)
-}else if( dolphinAverageScore === koalasAverageScore && dolphinAverageScore >= 100){
-    console.log(`Its's a draw`)
-}else if( dolphinAverageScore === koalasAverageScore && koalasAverageScore >= 100){
-    console.log(`Its's a draw`)
-}else if( dolphinAverageScore === koalasAverageScore && koalasAverageScore >= 100 && dolphinAverageScore >= 100){
-    console.log(`Both win the trophy`)
-}
-else{
-    console.log(`no one wins`)
-}
+// if (dolphinAverageScore > koalasAverageScore && dolphinAverageScore >= 100){
+//     console.log( `Dolphins are the winners of the competition`)
+// }else if(koalasAverageScore > dolphinAverageScore && koalasAverageScore >= 100){
+//     console.log( `Koalas are the winners of the competition`)
+// }else if( dolphinAverageScore === koalasAverageScore && dolphinAverageScore >= 100){
+//     console.log(`Its's a draw`)
+// }else if( dolphinAverageScore === koalasAverageScore && koalasAverageScore >= 100){
+//     console.log(`Its's a draw`)
+// }else if( dolphinAverageScore === koalasAverageScore && koalasAverageScore >= 100 && dolphinAverageScore >= 100){
+//     console.log(`Both win the trophy`)
+// }
+// else{
+//     console.log(`no one wins`)
+// }
 
+// coding challenge 4
+// using swith function
+// const tip = 200;
+
+// switch (tip){
+//     case (tip>=50 && tip<=300):
+//         console.log(`your tip is 15%`);
+//         break;
+//     default:
+//         console.log(`your tip is 20%`)
+
+// }
+
+// using conditinal operators
+const bill = 275;
+const tip = bill>=50 && bill<=300 ? bill * (15/100): bill = 20/100;
+console.log(`The bill is ${bill}, tip is ${tip}, total value is ${bill + tip}` )
