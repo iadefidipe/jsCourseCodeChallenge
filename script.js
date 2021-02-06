@@ -1,20 +1,20 @@
 
-const weightMark = 78;
-const heightMark = 1.69;
-const weightJohn = 92;
-const heightJohn = 1.95;
+// const weightMark = 78;
+// const heightMark = 1.69;
+// const weightJohn = 92;
+// const heightJohn = 1.95;
 
-const markBMI = weightMark / (heightMark**2)
-const johnBMI = weightJohn / (heightJohn**2)
+// const markBMI = weightMark / (heightMark**2)
+// const johnBMI = weightJohn / (heightJohn**2)
 
-const markHigherBMI = markBMI>johnBMI
-console.log( markBMI, johnBMI, markHigherBMI)
+// const markHigherBMI = markBMI>johnBMI
+// console.log( markBMI, johnBMI, markHigherBMI)
 
-if (markBMI > johnBMI){
-    console.log (` Mark's BMI ${markBMI} is higher than John's ${johnBMI}!`);
-} else{
-    console.log (` John BMI ${johnBMI} is higher than Mark's BMI ${markBMI} !`);
-}
+// if (markBMI > johnBMI){
+//     console.log (` Mark's BMI ${markBMI} is higher than John's ${johnBMI}!`);
+// } else{
+//     console.log (` John BMI ${johnBMI} is higher than Mark's BMI ${markBMI} !`);
+// }
 
 // const age = 19;
 // const isOldEnough = age >= 18;
@@ -37,4 +37,38 @@ if (markBMI > johnBMI){
 //     console.log (century)
 // }
 
-console.log(Number(13332))
+// console.log(Number(13332))
+
+// Coding challenge 3
+
+// const dolphinAverageScore = (96+108+89)/3;
+// const koalasAverageScore = (88+91+110)/3;
+// console.log(dolphinAverageScore,koalasAverageScore);
+
+// if (dolphinAverageScore > koalasAverageScore) {
+//     console.log( `Dolphins are the winners of the competition`);
+// }else if( dolphinAverageScore === koalasAverageScore){
+//     console.log(`Its's a draw`);}
+// else{
+//     console.log(`koalas are the winners of the competition`);
+// }
+
+const dolphinAverageScore = (97+112+101)/3;
+const koalasAverageScore = (109+95+123)/3;
+console.log(dolphinAverageScore,koalasAverageScore);
+
+if (dolphinAverageScore > koalasAverageScore && dolphinAverageScore >= 100){
+    console.log( `Dolphins are the winners of the competition`)
+}else if(koalasAverageScore > dolphinAverageScore && koalasAverageScore >= 100){
+    console.log( `Koalas are the winners of the competition`)
+}else if( dolphinAverageScore === koalasAverageScore && dolphinAverageScore >= 100){
+    console.log(`Its's a draw`)
+}else if( dolphinAverageScore === koalasAverageScore && koalasAverageScore >= 100){
+    console.log(`Its's a draw`)
+}else if( dolphinAverageScore === koalasAverageScore && koalasAverageScore >= 100 && dolphinAverageScore >= 100){
+    console.log(`Both win the trophy`)
+}
+else{
+    console.log(`no one wins`)
+}
+
