@@ -84,8 +84,29 @@
 //         console.log(`your tip is 20%`)
 
 // }
+// switch statement
+const day = 'monday';
+switch (day){
+    case 'monday':
+        console.log("It is monday");
+        break;
+    case'tuesday':
+    case 'wednesday':
+        console.log("the two days");
+        break;
+    default:
+        console.log("Not a week day")
+}
+// if statement equivalent
 
+if (day === 'monday'){
+    console.log('It is monday')
+    }else if (day === 'tuesday' || day === 'wednesday'){
+    console.log('the two days')    
+    }else {
+        console.log('Not a week day')
+    }
 // using conditinal operators
 const bill = 275;
 const tip = bill>=50 && bill<=300 ? bill * (15/100): bill = 20/100;
-console.log(`The bill is ${bill}, tip is ${tip}, total value is ${bill + tip}` )
+console.log(`The bill is ${bill}, tip is ${tip}, total value is ${bill + tip}`)
