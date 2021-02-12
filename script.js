@@ -162,7 +162,7 @@
 // console.log(yearsUntilRetirement(1995, 'Folarin'));
 
 // funtions calling other funtions
-const cutPieces = function (fruit) {
+/*const cutPieces = function (fruit) {
     return fruit * 4;
 }
 
@@ -175,6 +175,35 @@ const fruitProcessor = function (apples, oranges){
 
 }
 
-console.log( fruitProcessor(3,7))
+console.log( fruitProcessor(3,7)); */
+
+// Section coding challenge 1
+const calAverage = (score1, score2, score3) => {
+    const average = (score1 + score2 + score3)/3;
+    return average
+}
+
+function checkWinner (dolphinsAverage, koalasAverage){
+    dolphinsAverage = calAverage(44,23,71);
+    koalasAverage= calAverage(65,54,49);
+
+    if (dolphinsAverage >= 2 * koalasAverage){
+        console.log(` The winner is team Dolphin with ${dolphinsAverage} points`);
+    }else if (koalasAverage >= 2 * dolphinsAverage){
+        console.log(` The winner is team koalas with ${koalasAverage} points`);
+    }
+    else{
+        console.log(`No winner`);
+    }
+
+}
+
+
+
+// console.log(dolphinsAverage, koalasAverage);
+
+
+console.log( checkWinner());
+
 
 
