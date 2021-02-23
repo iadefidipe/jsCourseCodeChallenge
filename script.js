@@ -168,8 +168,7 @@
 
 const fruitProcessor = function (apples, oranges){
     const applesPieces = cutPieces(apples);
-    const orangesPieces = cutPieces(oranges);
-
+    const orangesPieces = cutPieces(oranges)
     const juice = `Juice with ${applesPieces} apples and ${orangesPieces} oranges`;
     return juice;
 
@@ -178,32 +177,41 @@ const fruitProcessor = function (apples, oranges){
 console.log( fruitProcessor(3,7)); */
 
 // Section coding challenge 1
-const calAverage = (score1, score2, score3) => {
-    const average = (score1 + score2 + score3)/3;
-    return average
-}
+// const calAverage = (score1, score2, score3) => {
+//     const average = (score1 + score2 + score3)/3;
+//     return average
+// }
 
-function checkWinner (dolphinsAverage, koalasAverage){
-    dolphinsAverage = calAverage(44,23,71);
-    koalasAverage= calAverage(65,54,49);
+// function checkWinner (dolphinsAverage, koalasAverage){
+//     dolphinsAverage = calAverage(44,23,71);
+//     koalasAverage= calAverage(65,54,49);
 
-    if (dolphinsAverage >= 2 * koalasAverage){
-        console.log(` The winner is team Dolphin with ${dolphinsAverage} points`);
-    }else if (koalasAverage >= 2 * dolphinsAverage){
-        console.log(` The winner is team koalas with ${koalasAverage} points`);
-    }
-    else{
-        console.log(`No winner`);
-    }
+//     if (dolphinsAverage >= 2 * koalasAverage){
+//         console.log(` The winner is team Dolphin with ${dolphinsAverage} points`);
+//     }else if (koalasAverage >= 2 * dolphinsAverage){
+//         console.log(` The winner is team koalas with ${koalasAverage} points`);
+//     }
+//     else{
+//         console.log(`No winner`);
+//     }
 
-}
-
-
-
+// }
 // console.log(dolphinsAverage, koalasAverage);
+// console.log( checkWinner());
 
+// Arrow function
+const calAge=birthYear => 2020 - birthYear;
+const age= calAge(1996);
+console.log(age);
 
-console.log( checkWinner());
+const yearsUntilRetirement = (birthYear, firstName) =>{
+    const age = 2030 - birthYear;
+    const retirement = 65 - age;
+    return ` ${firstName} retires in ${retirement} years`;
+}
+
+console.log( yearsUntilRetirement(1996,'Israel'));
+
 
 
 
