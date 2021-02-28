@@ -200,17 +200,99 @@ console.log( fruitProcessor(3,7)); */
 // console.log( checkWinner());
 
 // Arrow function
-const calAge=birthYear => 2020 - birthYear;
-const age= calAge(1996);
-console.log(age);
+// const calAge=birthYear => 2020 - birthYear;
+// const age= calAge(1996);
+// console.log(age);
 
-const yearsUntilRetirement = (birthYear, firstName) =>{
-    const age = 2030 - birthYear;
-    const retirement = 65 - age;
-    return ` ${firstName} retires in ${retirement} years`;
-}
+// Arrow function with two parameters
+// const yearsUntilRetirement = (birthYear, firstName) =>{
+//     const age = 2030 - birthYear;
+//     const retirement = 65 - age;
+//     return ` ${firstName} retires in ${retirement} years`;
+// }
 
-console.log( yearsUntilRetirement(1996,'Israel'));
+// console.log( yearsUntilRetirement(1996,'Israel'));
+
+// Arrays
+// const calcAge =function (birthYear){
+//     return 2020 - birthYear;
+// }
+// const years = [1991, 2000, 2002, 2005, 2007];
+// console.log(calcAge(years[2]))
+
+// // let year;
+// // coming back to this
+// // for (year in years){
+// //     age=calcAge(years[year])
+// // }
+// // console.log(age)
+//     // array methods
+
+//     // add elements
+//     length = years.push(1994); // push method: adds elemnts to d end
+//     console.log(years);
+//     console.log(length);
+    
+//     years.unshift(2013); // unshift method: adds elements to the begining of the array
+//     console.log(years);
+//     //the  above two methods, both returns the total no of elements after new elemet=nts has been added
+
+
+//     years.pop(); //pop method: removes the last element of the array and returns the element removed
+//     console.log(years.pop());
+//     console.log(years);
+
+//     years.shift(); // shift method: removes thhe first element of tthe array
+//     console.log(years.shift());
+//     console.log(years);
+
+    // friends.indexOf('Steven')
+    // friends.includes('Steven') // used to check if an element is in the array
+
+    
+    
+
+    function calcTip (bill){
+        const tip= bill>= 50 && bill <= 300 ? bill * (15/100) : bill *(20/100);
+        return tip;
+        
+    }
+
+    const bills= [125, 555, 44];
+
+    const tips =[];
+    let i;
+
+    for (i in bills){
+        const bill = bills[i];
+        console.log(bill)
+        const top= calcTip(bill);
+        tips.push(top);
+    }
+
+    console.log(tips)
+
+    let totalTips = [];
+    for (i in bills && i in tips){
+        total = bills[i] + tips[i];
+        totalTips.push(total);
+    }
+
+    console.log(bills, tips, totalTips)
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
 
 
 
