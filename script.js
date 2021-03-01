@@ -251,34 +251,73 @@ console.log( fruitProcessor(3,7)); */
 
     
     
+// coding challenge on arrays
 
-    function calcTip (bill){
-        const tip= bill>= 50 && bill <= 300 ? bill * (15/100) : bill *(20/100);
-        return tip;
+    // function calcTip (bill){
+    //     const tip= bill>= 50 && bill <= 300 ? bill * (15/100) : bill *(20/100);
+    //     return tip;
         
-    }
+    // }
 
-    const bills= [125, 555, 44];
+    // const bills= [125, 555, 44];
 
-    const tips =[];
-    let i;
+    // const tips =[];
+    // let i;
 
-    for (i in bills){
-        const bill = bills[i];
-        console.log(bill)
-        const top= calcTip(bill);
-        tips.push(top);
-    }
+    // for (i in bills){
+    //     const bill = bills[i];
+    //     console.log(bill)
+    //     const top= calcTip(bill);
+    //     tips.push(top);
+    // }
 
-    console.log(tips)
+    // console.log(tips)
 
-    let totalTips = [];
-    for (i in bills && i in tips){
-        total = bills[i] + tips[i];
-        totalTips.push(total);
-    }
+    // let totalTips = [];
 
-    console.log(bills, tips, totalTips)
+    // for (i in bills ){
+    //     total = bills[i] + tips[i];
+    //     totalTips.push(total);
+    // }
+
+    // console.log(bills, tips, totalTips);
+
+// const mark = {
+//     fullName: 'Mark Miller',
+//     mass: 78,
+//     height: 1.69,
+//     calcBMI: function(){
+//         this.BMI = this.mass/(this.height**2);
+//         // console.log(BMI);
+//         return this.BMI;
+//     }
+
+// };
+
+// const john = {
+//     fullName: 'John Smith',
+//     mass: 92,
+//     height: 1.95,
+//     calcBMI: function(){
+//         this.BMI = this.mass/(this.height**2);
+//         // console.log(BMI);
+//         return this.BMI;
+//     }
+
+
+// };
+
+// mark.calcBMI();
+// john.calcBMI();
+
+// console.log( mark.BMI, john.BMI);
+
+// if (mark.BMI > john.BMI){
+//     console.log('Good for mark');
+// } else {
+//     console.log ('Good for John');
+// }
+
 
 
 
