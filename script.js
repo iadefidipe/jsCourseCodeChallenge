@@ -1,4 +1,4 @@
-'use strict'; // to activate strict mode in js
+"use strict"; // to activate strict mode in js
 // const weightMark = 78;
 // const heightMark = 1.69;
 // const weightJohn = 92;
@@ -102,7 +102,7 @@
 // if (day === 'monday'){
 //     console.log('It is monday')
 //     }else if (day === 'tuesday' || day === 'wednesday'){
-//     console.log('the two days')    
+//     console.log('the two days')
 //     }else {
 //         console.log('Not a week day')
 //     }
@@ -110,7 +110,6 @@
 // const bill = 275;
 // const tip = bill>=50 && bill<=300 ? bill * (15/100): bill = 20/100;
 // console.log(`The bill is ${bill}, tip is ${tip}, total value is ${bill + tip}`)
-
 
 // // Funtions
 // function logger() {
@@ -156,7 +155,7 @@
 //     const age = 2020 - birthYear;
 //     const retirement = 65 - age;
 //     // return retirement;
-//     return `${firstName} retires in ${retirement} years`; 
+//     return `${firstName} retires in ${retirement} years`;
 // }
 
 // console.log(yearsUntilRetirement(1995, 'Folarin'));
@@ -232,11 +231,10 @@ console.log( fruitProcessor(3,7)); */
 //     length = years.push(1994); // push method: adds elemnts to d end
 //     console.log(years);
 //     console.log(length);
-    
+
 //     years.unshift(2013); // unshift method: adds elements to the begining of the array
 //     console.log(years);
 //     //the  above two methods, both returns the total no of elements after new elemet=nts has been added
-
 
 //     years.pop(); //pop method: removes the last element of the array and returns the element removed
 //     console.log(years.pop());
@@ -246,41 +244,39 @@ console.log( fruitProcessor(3,7)); */
 //     console.log(years.shift());
 //     console.log(years);
 
-    // friends.indexOf('Steven')
-    // friends.includes('Steven') // used to check if an element is in the array
+// friends.indexOf('Steven')
+// friends.includes('Steven') // used to check if an element is in the array
 
-    
-    
 // coding challenge on arrays
 
-    // function calcTip (bill){
-    //     const tip= bill>= 50 && bill <= 300 ? bill * (15/100) : bill *(20/100);
-    //     return tip;
-        
-    // }
+// function calcTip (bill){
+//     const tip= bill>= 50 && bill <= 300 ? bill * (15/100) : bill *(20/100);
+//     return tip;
 
-    // const bills= [125, 555, 44];
+// }
 
-    // const tips =[];
-    // let i;
+// const bills= [125, 555, 44];
 
-    // for (i in bills){
-    //     const bill = bills[i];
-    //     console.log(bill)
-    //     const top= calcTip(bill);
-    //     tips.push(top);
-    // }
+// const tips =[];
+// let i;
 
-    // console.log(tips)
+// for (i in bills){
+//     const bill = bills[i];
+//     console.log(bill)
+//     const top= calcTip(bill);
+//     tips.push(top);
+// }
 
-    // let totalTips = [];
+// console.log(tips)
 
-    // for (i in bills ){
-    //     total = bills[i] + tips[i];
-    //     totalTips.push(total);
-    // }
+// let totalTips = [];
 
-    // console.log(bills, tips, totalTips);
+// for (i in bills ){
+//     total = bills[i] + tips[i];
+//     totalTips.push(total);
+// }
+
+// console.log(bills, tips, totalTips);
 
 // const mark = {
 //     fullName: 'Mark Miller',
@@ -304,7 +300,6 @@ console.log( fruitProcessor(3,7)); */
 //         return this.BMI;
 //     }
 
-
 // };
 
 // mark.calcBMI();
@@ -312,27 +307,46 @@ console.log( fruitProcessor(3,7)); */
 
 // console.log( mark.BMI, john.BMI);
 
-// if (mark.BMI > john.BMI){
-//     console.log('Good for mark');
+// if (mark.BMI > john.BMI) {
+//   console.log("Good for mark");
 // } else {
-//     console.log ('Good for John');
+//   console.log("Good for John");
 // }
 
 
-
-
-
-
-
+//creating constructor functions to create an object
+//constructor function name should start with a capital letter
+/** function Person(firstName, lastName, dob){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = new Date(dob);
+    // this.getFullname = function(){
+    //     return `${this.firstName} ${this.lastName}`;  
+    // }
+     
     
+} 
+
+//another way to do this is using the prototype object
+Person.prototype.getFullname = function(){
+    ;
+} **/
+
+//but the mordern way to do it in ES6 is create a class 
+class Person{
+    constructor(firstName, lastName, dob){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dob = new Date(dob);
+    }
+
+    // to create function properties
+    getFullname(){
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
 
 
-
-
-
-
-
-
-
-
-
+//instatiating an object
+const person1 = new Person('Israel', 'Adefidipe', '04-05-1996');
+console.log(person1.getFullname());
